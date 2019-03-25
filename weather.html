@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="weather.css" />
+
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <header class="pb-5">
+      <div class="overlay h-100">
+        <div class="container h-100">
+          <nav class="d-flex justify-content-between pb-4">
+            <div class="left flex">
+              <h4><a href="#!">Fun Weather</a></h4>
+            </div>
+            <div
+              class="middle d-flex p-1 flex-warp"
+            >
+              <a href="">Home</a>
+              <a href="">Features</a>
+              <a href="">Reviews</a>
+              <a href="">Downloads</a>
+            </div>
+            <div class="right d-none d-lg-block">
+              <a href="#!"><i class="fab fa-facebook-f"></i></a>
+              <a href="#!"><i class="fab fa-twitter"></i></a>
+              <a href="#!"><i class="fab fa-instagram"></i></a>
+            </div>
+          </nav>
+          <div
+            id="hero"
+            class="d-flex align-items-center justify-content-center"
+          >
+            <div class="row d-flex align-items-center">
+              <div class="col-md">
+                <h1>Get the most fun weather app</h1>
+                <p>
+                  Simple, nice and user-friendly application of the weather.
+                  Only useful information
+                </p>
+                <div class="row" id="hero-buttons">
+                  <div class="col d-flex">
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-primary">
+                      Primary
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md d-flex phone pb-5">
+                <img src="phone.png" class="img-fluid" alt="" />
+                <div class="overlay_phone">
+                  <div class="phone_image" id="degrees">
+                    9º
+                  </div>
+                  <div class="phone_image" id="london">
+                    <img
+                      src="London.png"
+                      class="img-fluid"
+                      alt=""
+                      height="13px"
+                    />
+                  </div>
+                  <div class="phone_image" id="sunny">
+                    <img
+                      src="Sunny.png"
+                      class="img-fluid"
+                      alt=""
+                      height="13px"
+                    />
+                  </div>
+                  <div class="phone_image" id="rio">
+                    <img src="Rio.png" class="img-fluid" alt="" height="13px" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="circle">
+              <img src="arrow.png" class="img-fluid" id="arrow-down" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="features" class="container pt-5">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-center">
+            <h2>
+              Perfect Features
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row p-5">
+        <div class="col-12 col-md-4 p-4">
+          <div class="row">
+            <div class="col icons"><i class="far fa-gem"></i></div>
+            <div class="col d-flex justify-content-center align-items-center">
+              <div class="row">
+                <div class="col">Usability</div>
+                <div class="col text-muted">nhdiosanoidnsaoidnios</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 p-4">
+          <div class="row">
+            <div class="col icons"><i class="fas fa-book-open"></i></div>
+            <div class="col d-flex justify-content-center align-items-center">
+              <div class="row">
+                <div class="col">Parallax Effect</div>
+                <div class="col text-muted">nhdiosanoidnsaoidnios</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 p-4">
+          <div class="row">
+            <div class="col icons"><i class="fab fa-algolia"></i></div>
+            <div class="col d-flex justify-content-center align-items-center">
+              <div class="row">
+                <div class="col">Unlimited Colors</div>
+                <div class="col text-muted">nhdiosanoidnsaoidnios</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="carousel">
+      <div class="container p-5">
+        <div class="row pb-5">
+          <div class="col">
+            <div class="d-flex justify-content-center">
+              <h2 id="widgets-header">
+                Simple Widgets
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="pt-5 row d-flex justify-content-center">
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <div class="owl-carousel">
+                <div>
+                  <img
+                    class="carousel-image"
+                    src="image center.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="carousel-image"
+                    src="image left.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <img
+                    class="carousel-image"
+                    src="image center.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="screenshots">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col">
+            <div class="d-flex justify-content-center">
+              <h2 id="widgets-header">
+                Screenshots
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row p-5 d-flex justify-content-center align-items-center item"
+        >
+          <div class="col-12 col-md-6">
+            <img src="./SCREEN.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-12 col-md-6 p-5">
+            <img src="./cloudyicon.png" alt="" class="pb-4 img-fluid" />
+
+            <h4>When the clouds</h4>
+            <p>
+              Variable Information on the air humidity..........................
+            </p>
+            <img src="icons.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div
+          class="row p-5 d-flex justify-content-center align-items-center item"
+        >
+          <div class="col-12 col-md-6">
+            <img src="./SCREEN2.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-12 col-md-6 p-5">
+            <img src="./rainyicon.png" alt="" class="pb-4 img-fluid" />
+            <h4>When the clouds</h4>
+            <p>
+              Variable Information on the air humidity..........................
+            </p>
+            <img src="icons.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+
+        <div
+          class="row p-5 d-flex justify-content-center align-items-center item"
+        >
+          <div class="col-12 col-md-6">
+            <img src="./phone image.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-12 col-md-6 p-5">
+            <img src="./sunnyicon.png" alt="" class="pb-4 img-fluid" />
+            <h4>When the clouds</h4>
+            <p>
+              Variable Information on the air humidity..........................
+            </p>
+            <img src="icons.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="container">
+        <div class="row p-md-5 pt-5">
+          <div class="col">
+            <div class="d-flex justify-content-center">
+              <h2 id="widgets-header">
+                Screenshots
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row p-md-5 d-flex justify-content-center align-items-center item"
+        >
+          <div class="col-12 col-md-6 p-4">
+            <img src="./aspas2.png" class="aspas" alt="" />
+            <p class="pt-4">
+              Sed sollicitudin libero ac sem pharetra, nec sagittis tortor
+              finibus. Aenean tempor tellus turpis, a aliquet magna feugiat in.
+              Mauris sollicitudin sit amet odio sit amet ullamcorper. Quisque at
+              ligula nulla. Phasellus dapibus et neque sed ornare. Aliquam vel
+              eros risus. Maecenas fringilla felis ut est gravida commodo.
+            </p>
+            <p><small>Someone name</small></p>
+            <img src="./aspas.png" class="float-right aspas" alt="" />
+          </div>
+          <div class="col-12 col-md-6 p-4">
+            <img src="./aspas2.png" class="aspas" alt="" />
+            <p class="pt-4">
+              Fusce non aliquet leo. Mauris aliquet dui eu sapien iaculis, nec
+              dictum dolor tincidunt. Phasellus sollicitudin ac quam a volutpat.
+              Suspendisse scelerisque mollis neque, in consequat quam viverra
+              quis. Pellentesque maximus lacus risus, ac ullamcorper massa
+              tincidunt in. Orci varius natoque penatibus et magnis dis
+              parturient montes, nascetur ridiculus mus. Integer volutpat sem
+              interdum sagittis finibus. Donec at rutrum velit. Maecenas
+              condimentum sapien quis posuere posuere. Pellentesque varius lacus
+              congue, laoreet ligula condimentum, feugiat odio. Vivamus id ante
+              quam. Integer dictum pretium ligula eu posuere. Curabitur eu
+              tellus sit amet tortor placerat convallis vel consequat odio.
+              Nulla non congue enim. Mauris ac viverra lacus. Suspendisse
+              elementum fringilla lacus et placerat.
+            </p>
+            <p><small>Someone name</small></p>
+            <img src="./aspas.png" class="float-right aspas" alt="" />
+          </div>
+          <div class="col-12 col-md-6 p-4">
+            <img src="./aspas2.png" class="aspas" alt="" />
+            <p class="pt-4">
+              Proin commodo tincidunt nulla ut vehicula. Morbi ut sem velit.
+              Vivamus mollis hendrerit pharetra. Nulla iaculis ornare mollis.
+              Class aptent taciti sociosqu ad litora torquent per conubia
+              nostra, per inceptos himenaeos. Etiam lectus leo, iaculis et
+              sapien egestas, tempus placerat leo. Nam faucibus quam nisi, a
+              accumsan erat convallis eu. Mauris dignissim urna pellentesque
+              bibendum interdum. Nam eget neque luctus, pulvinar odio in, tempor
+              est. Suspendisse vulputate eros in nulla dapibus semper a vel
+              nibh. Cras sagittis iaculis erat, at ultrices metus facilisis non.
+              Vestibulum neque justo, dictum sed ornare et, lacinia vitae mi.
+              Mauris vel libero egestas sapien ornare facilisis. Curabitur at
+              sapien eu est fringilla faucibus.
+            </p>
+            <p><small>Someone name</small></p>
+            <img src="./aspas.png" class="float-right aspas" alt="" />
+          </div>
+          <div class="col-12 col-md-6 p-4">
+            <img src="./aspas2.png" class="aspas" alt="" />
+            <p class="pt-4">
+              Nam quis tincidunt quam. Vivamus ac orci eu libero varius finibus.
+              Duis laoreet lacus viverra urna aliquet imperdiet. Quisque in
+              lorem ullamcorper, sagittis est at, convallis arcu. Nulla sed
+              massa enim. Proin sed ex id quam varius pharetra. Cras ornare a
+              nulla ac accumsan. Donec pulvinar varius sapien, ac sagittis
+              mauris lacinia eget. Nam dictum nibh metus, eu aliquam tellus
+              rhoncus nec. Nullam mi ipsum, luctus quis ex sed, eleifend
+              convallis magna. Donec suscipit felis nec pretium congue. Praesent
+              maximus laoreet ligula nec tempor.
+            </p>
+            <p><small>Someone name</small></p>
+            <img src="./aspas.png" class="float-right aspas" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="download">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col-12 col-md-6">
+            <h4>HOW DOWNLOAD THE APP?</h4>
+            <p>
+              Mauris dapibus lacus tortor. In arcu massa, lobortis in accumsan
+              a, facilisis in mi. Praesent consectetur non urna eget dignissim.
+              Nulla ex nisl, malesuada eget turpis quis, faucibus pharetra
+              purus. Donec dapibus sem sit amet lorem rutrum, in sagittis dui
+              rutrum. Cras non risus ac magna malesuada tristique. Aliquam
+              vehicula neque ac velit semper mollis. Donec dictum est eu dolor
+              suscipit auctor. Nunc sed dui ligula. Mauris malesuada sit amet
+              nisl eget luctus. Fusce tempor aliquam dignissim. Duis risus
+              felis, commodo a tortor vel, fringilla ultricies tortor.
+              Vestibulum tempor aliquet mauris vitae pulvinar. Sed a accumsan
+              ante. Nunc eget felis ipsum. Nunc vitae nunc vel nisl consectetur
+              laoreet.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 d-none d-md-flex">
+            <img src="./blur1.png" alt="" class="img-fluid" id="blurry1" />
+            <img src="./blur2.png" alt="" class="img-fluid" id="blurry2" />
+            <img src="./phone image.png" alt="" class="img-fluid" id="center" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container text-light p-5">
+        <nav class="d-flex justify-content-between p-3 pr-md-5">
+          <div class="left">
+            <h4><a href="#!">Fun Weather</a></h4>
+          </div>
+          <div
+            class="middle d-flex justify-content-around flex-grow-1 p-1 flex-column flex-md-row"
+          >
+            <a href="">Home</a>
+            <a href="">Features</a>
+            <a href="">Reviews</a>
+            <a href="">Downloads</a>
+          </div>
+          <div class="right d-none d-lg-block pl-5">
+            <a href="#!"><i class="fab fa-facebook-f"></i></a>
+            <a href="#!"><i class="fab fa-twitter"></i></a>
+            <a href="#!"><i class="fab fa-instagram"></i></a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 3,
+              nav: false
+            }
+          },
+          loop: true,
+          center: true
+        });
+      });
+    </script>
+  </body>
+</html>
